@@ -1,14 +1,29 @@
-/* 1) `Presidents - Accessing values in an Array`
-Declare a variable named `presidents` and set its value to an Array containing the first 5 presidents' last names: `Washington`, `Adams`, `Jefferson`, `Madison`, `Monroe`.
+/* 1) Mr. President
+ Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
+ 
+Write a for loop that will iterate through this array and within the for loop console.log the following:
+"The value at 0 is Washington." 
+"The value at 1 is Adams." 
+"The value at 2 is "Jefferson."
+"The value at 3 is "Madison."
+"The value at 4 is Monroe."
 
-Now write a **for-loop** which iterates through this Array.
+What is the length of this array?
 
-Within the **for-loop**, use `console.log` to:
+1-A) Create a function named leaders which will take in a parameter: `person`.
+   @param Datatype: String `person`
+ 
+This function will iterate through the person parameter and console.log the following message for each item in the array:
 
-- Log the value of `i`. Use a message like `Value of i is: ` and append the value of `i` to this String
-- Log what is at index `i` in the array. Use a message like `Value at Index is: ` and append the value stored within the Array at that index.*/
+"President person was a great leader."
+*/
 
-/***bonus:** could you take the code inside of this for-loop and encapsulate it inside of a function called `printContent` and still achieve the same result? This new function should accept two parameters.*/
+
+   
+ 
+ 
+ 
+
 
 
 
