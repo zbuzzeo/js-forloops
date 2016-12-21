@@ -1,5 +1,4 @@
-/* 1) Mr. President
- Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
+/* 1) Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
  
 Write a for loop that will iterate through this array and within the for loop console.log the following:
 "The value at 0 is Washington." 
@@ -19,20 +18,16 @@ This function will iterate through the person parameter and console.log the foll
 */
 
 
-   
- 
- 
- 
+/* 2) Declare a variable named `stringOfNumbers` and set it's value to an empty string.
+
+Write a **for-loop** that concatenates a Number value to that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"
+
+**bonus:** could you take the code inside of this for-loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?
+
+*/
 
 
 
-
-/* 2) Declare a variable named `stringOfNumbers` and set it's value to `''` (an empty String).
-
-Write a **for-loop** that concatenates a Number value to that string on each iteration, starting at `10` and continuing up to and including `20`. */
-
-
-/***bonus:** could you take the code inside of this for-loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?*/
 
 
 /* 3) `Add only even numbrs to an array`
