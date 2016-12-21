@@ -1,6 +1,6 @@
 /* 1) Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
  
-Write a for loop that will iterate through this array and within the for loop console.log the following:
+Write a for-loop that will iterate through this array and within the for-loop console.log the following:
 "The value at 0 is Washington." 
 "The value at 1 is Adams." 
 "The value at 2 is "Jefferson."
@@ -18,22 +18,26 @@ This function will iterate through the person parameter and console.log the foll
 */
 
 
-/* 2) Declare a variable named `stringOfNumbers` and set it's value to an empty string.
+/* 2) Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
-Write a **for-loop** that concatenates a Number value to that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"
+Write a for-loop that concatenates a Number value to that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"
 
 **bonus:** could you take the code inside of this for-loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?
-
 */
 
 
+/* 3) Declare a variable named `evenNumArr` and assign its value to an empty array. 
+
+Write a for-loop that will push even numbers to the `evenNumArr` array. We want to push 50 even even numbers starting from 0.
+Console.log your results.
+*/
 
 
+/* 4) Declare a variable named `oddSum` and assign it to the Number value 0.
 
-/* 3) `Add only even numbrs to an array`
-Declare a variable named `evenNumberArray` and set its value to an empty array.
-
-Use a for-loop to add only even numbers to an Array. Add `50` even numbers to the `evenNumberArray` starting with the value `0`.*/
+Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want to add 50 odd numbers starting from 1.
+Console.log your results.
+*/
   
 
 /* 4) `Accessing only the odd indexes of an Array - 'Not Even Brah'`
