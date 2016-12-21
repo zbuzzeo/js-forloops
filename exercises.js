@@ -40,32 +40,18 @@ Console.log your results.
 */
   
 
-/* 4) `Accessing only the odd indexes of an Array - 'Not Even Brah'`
-Someone forgot to fill out this array! Oh noes...
+/* 5) Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
 
-Declare a new variable named `oopsArray` set it's value to be: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
+Note that every odd index value in `oopsArray` is currently `undefined`. Using a for-loop, add the string `'nope'` to every odd index. Console.log your result. It should look like this:
 
-Note that every odd index value in `oopsArray` is currently `undefined`. Using a for-loop, add the string `'nope'` to every odd index.
-
-Example result should look like:
-
-`[ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]`*/
+[ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
+*/
 
 
+/* 6) Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
 
-/* 5) `Going backwards?!`
-Using a for-loop, iterate through the Array stored at `oopsArray` **backwards**. `console.log` each value in the Array.
-
-example output:
-```
-what
-nope
-for
-nope
-down
-nope
-turn
-```*/
+['what', 'nope', 'for', 'nope', 'down', 'nope', 'turn']
+*/
 
 
 
