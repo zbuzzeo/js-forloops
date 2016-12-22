@@ -54,27 +54,25 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 */
 
 
-
 /* 7) Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
 
-Next, write a function named `nap`. This function takes in a single parameter called `schedule`
+Next, write a function named `nap`. This function takes in a single parameter: `schedule`
 
    @param Datatype: Array `schedule`
 
-Inside this function write a for-loop that will iterate through the napSchedule array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
+Inside of this function write a for-loop that will iterate through the `napSchedule` array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
 */
 
 
+/* 8) Declare a variable named `valuesArray` and assign it's value to be an array: `[99, 66, 829, 1941, 8, 76]`.
 
+Write a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. 
 
+   @param Datatype: Array `originArray`
+   @param Datatype: Array `destinationArray`
 
-
-/* Declare a variable named `valuesArray` and set it's value to be an array, `[99, 66, 829, 1941, 8, 76]`.
-
-Declare a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. Inside of this function you will loop through the contents of `originArray` and push each value into `destinationArray`.
-
-To get started, below your function declaration, call your function and pass in the two variables, `valuesArray` and `copyOfValuesArray`. After that, use `console.log` to to inspect the values of `valuesArray` and `copyOfValuesArray` to make sure they have the same values (which means your function worked!).*/
-
+Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
+*/
 
 
 /*![final-boss](https://s3.amazonaws.com/uploads.hipchat.com/54891/2015941/zamX8AqbgYw0QJ8/giphy.gif)
