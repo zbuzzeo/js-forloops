@@ -55,17 +55,19 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 
 
-/* 6) `isNapTime`
-Declare a variable named `isNapTime`. Set it to `false`.
+/* 7) Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
 
-Declare a variable named `napSchedule`. Set it's value to be an `Array` with the values `[false, false, true, false, true, true]`
+Next, write a function named `nap`. This function takes in a single parameter called `schedule`
 
-Declare a function named `nap`. This function takes in a single parameter called `schedule`
+   @param Datatype: Array `schedule`
 
-- If `schedule` is `true` then use `console.log` to display the message `ZzZzZzZz`
-- otherwise if `schedule` is `false` use `console.log` to display the message `Gotta get to work!` and then change the value of `isNapTime` to `true`
+Inside this function write a for-loop that will iterate through the napSchedule array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
+*/
 
-Now, Write a FOR loop that iterates through the `napSchedule` array and runs the function `nap` while passing in the value at the current position of `napSchedule` into the `nap` function.*/
+
+
+
+
 
 /* Declare a variable named `valuesArray` and set it's value to be an array, `[99, 66, 829, 1941, 8, 76]`.
 
