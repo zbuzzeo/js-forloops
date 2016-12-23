@@ -9,6 +9,7 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 "Now serving 20."
 */
 
+
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
 "This week's chart buster is: 'Closer.'"
@@ -19,7 +20,6 @@ Write a for-loop that will iterate through the topFive array below and console.l
 */
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
-
 
 
 /* 3) Dead Presidents
@@ -76,13 +76,15 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 */
 
 
-/* 6) Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
+/* 8) Is It There Opps
+Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
 
 ['what', 'nope', 'for', 'nope', 'down', 'nope', 'turn']
 */
 
 
-/* 7) Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
+/* 9) Siesta Time
+Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
 
 Next, write a function named `nap`. This function takes in a single parameter: `schedule`
 
@@ -92,7 +94,8 @@ Inside of this function write a for-loop that will iterate through the `napSched
 */
 
 
-/* 8) Declare a variable named `valuesArray` and assign it's value to be an array: `[99, 66, 829, 1941, 8, 76]`.
+/* 10) Copy Pasta
+Declare a variable named `valuesArray` and assign it's value to be an array: `[99, 66, 829, 1941, 8, 76]`.
 
 Write a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. 
 
@@ -100,26 +103,38 @@ Write a function named `copyArray` which takes two arguments: `originArray` and 
    @param Datatype: Array `destinationArray`
 
 Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
-*/for
+*/
 
 
-/* 9) Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each and Every Highway. But More, Much More Than This. I Did It My Way."  
+/*Final Boss*/
+
+/* 11) Go Long
+Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
+Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
+*/
+
+/* 12) Puppet Master
+Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
+Write a function named `generateArrayOfStrings` which takes a single argument `storage`. This function will return a new Array with only `String` values inside of it.
+
+   @param Datatype: Array `storage`
+   @return Datatype: Array
+
+*/
+
+/* 13) All Grown Up 
+Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each and Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way."
 
 
-/*![final-boss](https://s3.amazonaws.com/uploads.hipchat.com/54891/2015941/zamX8AqbgYw0QJ8/giphy.gif)
-
- Stage 1 - Only String Values
-Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
-
-Declare a function named `generateArrayOfStrings` which takes a single argument `storage`. This function returns a new Array with only `String` values inside of it.
+/* 14) 
 
  Final Form - Change values of objects stored within an Array
 It's that time again, we need to graduate the current class of students and start enrollment for the next class.
 
-Declare a variable named `currentClass` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
+Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
 
 Declare a function named `graduateAndSetNewClass`, it takes a single argument called `cohort`.
 
