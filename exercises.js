@@ -129,17 +129,14 @@ Write a function that will capitalize the first letter in each word in the phras
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way."
 
 
-/* 14) 
-
- Final Form - Change values of objects stored within an Array
-It's that time again, we need to graduate the current class of students and start enrollment for the next class.
-
+/* 14) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
+Write a function named `graduateAndSetNewClass`, which takes a single argument called `cohort`.
 
-Declare a function named `graduateAndSetNewClass`, it takes a single argument called `cohort`.
+   @param Datatype: Array `cohort`
 
-Your function will iterate through the `cohort` argument and check each student's `enrolled` property.
-
+The function will iterate through the `cohort` argument and check each student's `enrolled` property.
 If the `enrolled` property is set to `true` then change that student's `graduated` property to `true`. Otherwise, if `enrolled` is set to `false` then change `enrolled` to `true` leaving `graduated` alone and unchanged.
+Console.log your result.
 */
 
