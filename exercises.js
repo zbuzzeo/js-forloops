@@ -75,6 +75,12 @@ Inside of this function write a for-loop that will iterate through the contents 
 */
 
 
+/* 9) Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each and Every Highway. But More, Much More Than This. I Did It My Way."  
+*/
+
+var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way."
+
+
 /*![final-boss](https://s3.amazonaws.com/uploads.hipchat.com/54891/2015941/zamX8AqbgYw0QJ8/giphy.gif)
 
  Stage 1 - Only String Values
