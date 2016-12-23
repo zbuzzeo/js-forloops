@@ -22,7 +22,7 @@ var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K 
 
 
 
-/* 2) Dead Presidents
+/* 3) Dead Presidents
 Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
  
 Write a for-loop that will iterate through this array and within the for-loop console.log the following:
@@ -34,7 +34,7 @@ Write a for-loop that will iterate through this array and within the for-loop co
 
 Next, console.log the length of the array.
 
-2-A) Create a function named leaders which will take in a parameter: `person`.
+3-A) Create a function named leaders which will take in a parameter: `person`.
    @param Datatype: String `person`
  
 This function will iterate through the person parameter and console.log the following message for each item in the array:
@@ -43,31 +43,33 @@ This function will iterate through the person parameter and console.log the foll
 */
 
 
-/* 3) Line Number
+/* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"
 
-3-A) Create a function called `appendToString` and have it produce the same result as above. Console.log your results.
+4-A) Create a function called `appendToString` and have it produce the same result as above. Console.log your results.
 */
 
 
-/* 3) Declare a variable named `evenNumArr` and assign its value to an empty array. 
+/* 5) Even Stevens
+Declare a variable named `evenNumArr` and assign its value to an empty array. 
 
 Write a for-loop that will push even numbers to the `evenNumArr` array. We want to push 50 even even numbers starting from 0.
 Console.log your results.
 */
 
 
-/* 4) Declare a variable named `oddSum` and assign it to the Number value 0.
+/* 6) Up the Odds
+Declare a variable named `oddSum` and assign it to the Number value 0.
 
 Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want to add 50 odd numbers starting from 1.
 Console.log your results.
 */
   
 
-/* 5) Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
-
+/* 7) Opps There It is
+Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
 Note that every odd index value in `oopsArray` is currently `undefined`. Using a for-loop, add the string `'nope'` to every odd index. Console.log your result. It should look like this:
 
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
