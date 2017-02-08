@@ -46,10 +46,7 @@ This function will iterate through the person parameter and console.log the foll
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
-Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"
-
-4-A) Create a function called `appendToString` and have it produce the same result as above. Console.log your results.
-*/
+Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
 
 
 /* 5) Even Stevens
@@ -68,7 +65,7 @@ Console.log your results.
 */
   
 
-/* 7) Opps There It is
+/* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
 Note that every odd index value in `oopsArray` is currently `undefined`. Using a for-loop, add the string `'nope'` to every odd index. Console.log your result. It should look like this:
 
@@ -76,10 +73,16 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 */
 
 
-/* 8) Is It There Opps
+/* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
 
-['what', 'nope', 'for', 'nope', 'down', 'nope', 'turn']
+what
+nope
+for
+nope
+down
+nope
+turn
 */
 
 
@@ -95,7 +98,8 @@ Inside of this function write a for-loop that will iterate through the `napSched
 
 
 /* 10) Copy Pasta
-Declare a variable named `valuesArray` and assign it's value to be an array: `[99, 66, 829, 1941, 8, 76]`.
+Declare a variable named `valuesArray` and assign its value to be an array: `[99, 66, 829, 1941, 8, 76]`. 
+Declare another variable named `copyValuesArray` and assing its value to an empty array.
 
 Write a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. 
 
@@ -113,6 +117,8 @@ Declare a variable named `topQuote` and assign it to a String value of your favo
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
 
+
+
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
 Write a function named `generateArrayOfStrings` which takes a single argument `storage`. This function will return a new Array with only `String` values inside of it.
@@ -122,11 +128,14 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 */
 
+
+
 /* 13) All Grown Up 
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each and Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
-var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way."
+var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
+
 
 
 /* 14) Back to School
