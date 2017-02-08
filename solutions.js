@@ -70,11 +70,14 @@ leaders(presidents);
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
-Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"
+Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
 
-4-A) Create a function called `appendToString` and have it produce the same result as above. Console.log your results.
-*/
+var stringOfNumbers = "";
+for(var i = 10; i<21; i++){
+  stringOfNumbers += i;
+}
 
+console.log(stringOfNumbers);
 
 
 /* 5) Even Stevens
@@ -84,6 +87,15 @@ Write a for-loop that will push even numbers to the `evenNumArr` array. We want 
 Console.log your results.
 */
 
+var evenNumArr = [];
+
+for(var i = 0; i<100; i++){
+  if(i%2 === 0){
+    evenNumArr.push(i);
+  }
+}
+
+console.log(evenNumArr);
 
 /* 6) Up the Odds
 Declare a variable named `oddSum` and assign it to the Number value 0.
@@ -92,20 +104,49 @@ Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want 
 Console.log your results.
 */
   
+ var oddSum = 0;
+ for(var i = 1; i<100; i++){
+  if(i%2 === 1){
+    oddSum +=i;
+  }
+ }
 
-/* 7) Opps There It is
+ console.log(oddSum);
+
+
+/* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
 Note that every odd index value in `oopsArray` is currently `undefined`. Using a for-loop, add the string `'nope'` to every odd index. Console.log your result. It should look like this:
 
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
 
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ];
+for(var i = 0; i<oopsArray.length; i++){
+  console.log(oopsArray[i]);
+  if(i%2 ===1){
+    oopsArray[i] = "nope";
+  }
+}
 
-/* 8) Is It There Opps
+console.log(oopsArray);
+
+
+/* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
 
-['what', 'nope', 'for', 'nope', 'down', 'nope', 'turn']
+what
+nope
+for
+nope
+down
+nope
+turn
 */
+
+for(var i = oopsArray.length - 1; i>0; i--){
+  console.log(oopsArray[i]);
+}
 
 
 /* 9) Siesta Time
@@ -118,9 +159,24 @@ Next, write a function named `nap`. This function takes in a single parameter: `
 Inside of this function write a for-loop that will iterate through the `napSchedule` array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
 */
 
+var napSchedule = [false, false, true, false, true, true];
+
+function nap(schedule){
+  for(var i = 0; i<schedule.length; i++){
+   if(schedule[i] === true){
+    console.log("ZzZzZzZz");
+   }else{
+    console.log("Gotta get coding!");
+   } 
+  }
+}
+
+nap(napSchedule);
+
 
 /* 10) Copy Pasta
-Declare a variable named `valuesArray` and assign it's value to be an array: `[99, 66, 829, 1941, 8, 76]`.
+Declare a variable named `valuesArray` and assign its value to be an array: `[99, 66, 829, 1941, 8, 76]`. 
+Declare another variable named `copyValuesArray` and assing its value to an empty array.
 
 Write a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. 
 
@@ -130,6 +186,19 @@ Write a function named `copyArray` which takes two arguments: `originArray` and 
 Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
 */
 
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+var copyValuesArray = [];
+
+function copyArray(originArray, destinationArray){
+  for(var i = 0; i<originArray.length; i++){
+    destinationArray.push(originArray[i]);
+  }
+  return destinationArray;
+}
+
+console.log(copyArray(valuesArray, copyValuesArray));
+console.log(copyValuesArray);
+
 
 /*Final Boss*/
 
@@ -137,6 +206,21 @@ Inside of this function write a for-loop that will iterate through the contents 
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
+
+var topQuote = "Boards don't hit back.";
+
+function longestWord(str){
+  var strToArray = str.split(" "); //converts string to an array
+  var currentWord = ""; //to store the string 
+  for(var i =0; i<strToArray.length; i++){ //iterate through the string array
+    if(strToArray[i].length > currentWord.length){ //comparing if the word's length is longer than current word
+      currentWord = strToArray[i]; 
+    }
+  }
+  return currentWord;
+}
+
+console.log(longestWord(topQuote));
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
@@ -147,11 +231,42 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 */
 
+var miscStorage = [ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ];
+
+function generateArrayOfStrings(storage){
+  var stringArray = [];
+  for(var i = 0; i<storage.length; i++){
+    if(typeof storage[i] === typeof ""){ //typeof operator returns a string https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+      stringArray.push(storage[i]);
+    }
+  }
+  return stringArray;
+}
+
+console.log(generateArrayOfStrings(miscStorage));
+
+
 /* 13) All Grown Up 
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each and Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
-var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way."
+var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
+
+function capitalize(str){
+  var word = str.split(" ");
+  //console.log(word);
+  for(var i = 0; i<word.length; i++){
+    //console.log(strSplit[i]);
+    var letter = word[i].split("");
+    //console.log(letter);
+    letter[0] = letter[0].toUpperCase();
+    //console.log(letter);
+    word[i] = letter.join('');
+  }
+  return word.join(" ");
+}
+
+console.log(capitalize(myWay));
 
 
 /* 14) Back to School
@@ -165,3 +280,54 @@ If the `enrolled` property is set to `true` then change that student's `graduate
 Console.log your result.
 */
 
+var currentCohort = [
+  {
+    name: 'Doug',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Pat',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Marsha',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Moira',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Ben',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Nigel the Giraffe',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Brandon the Shark',
+    graduated: false,
+    enrolled: true
+  }
+];
+
+function graduateAndSetNewClass(cohort){
+ for(var i = 0; i<cohort.length; i++){
+  //console.log(cohort[i]);
+  if(cohort[i].enrolled === true){
+    cohort[i].graduated = true;
+  }else{
+    cohort[i].graduated = false;
+  }
+ }
+ return cohort;
+}
+
+console.log(graduateAndSetNewClass(currentCohort));
