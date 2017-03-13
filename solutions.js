@@ -256,7 +256,7 @@ function capitalize(str){
   var word = str.split(" ");
   //console.log(word);
   for(var i = 0; i<word.length; i++){
-    //console.log(strSplit[i]);
+    //console.log(word[i]);
     var letter = word[i].split("");
     //console.log(letter);
     letter[0] = letter[0].toUpperCase();
