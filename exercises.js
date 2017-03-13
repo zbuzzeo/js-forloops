@@ -96,19 +96,6 @@ Next, write a function named `nap`. This function takes in a single parameter: `
 Inside of this function write a for-loop that will iterate through the `napSchedule` array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
 */
 
-var napSchedule = [false, false, true, false, true, true];
-
-function nap(schedule){
-  for(var i = 0; i<schedule.length; i++){
-    if(schedule[i] === true){
-      console.log("ZzZzZzZz");
-    }else{
-      console.log('Gotta get coding!');
-    }
-  }
-
-}
-nap(napSchedule);
 
 
 /* 10) Copy Pasta
@@ -122,21 +109,6 @@ Write a function named `copyArray` which takes two arguments: `originArray` and 
 
 Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
 */
-
-var valuesArray = [99, 66, 829, 1941, 8, 76];
-var copyValuesArray = [];
-
-function copyArray(originArray, destinationArray){
-  for(var i = 0; i<originArray.length; i++){
-    //destinationArray[i] = originArray[i];
-    destinationArray.push(originArray[i]);
-  }
-}
-
-copyArray(valuesArray, copyValuesArray);
-
-console.log("copyValuesArray ", copyValuesArray);
-
 
 
 
