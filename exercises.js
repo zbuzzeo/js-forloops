@@ -138,9 +138,17 @@ Write a function that will capitalize the first letter in each word in the phras
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
+/* 14) Sightseeing
+Write a function that will loop through the multi-dimensional array and console.log the city and landmark on separate lines.
+Note, please use two for loops to complete this problem
+
+  @param Datatype: Array
+  */
+
+var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
 
 
-/* 14) Back to School
+/* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
 Write a function named `graduateAndSetNewClass`, which takes a single argument called `cohort`.
 
