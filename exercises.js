@@ -1,7 +1,7 @@
 
 function spacer(probNum){
   console.log(' ');
-  console.log(probnum + ':');
+  console.log(probNum + ':');
 }
 
 /* 1) Ticket Generator
@@ -15,6 +15,11 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 "Now serving 20."
 */
 
+spacer(1);
+for (var i = 1; i <= 20; i++){
+  console.log('Now serving', i + '.');
+}
+
 
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
@@ -26,6 +31,11 @@ This week's chart buster is: '24K Magic.'
 */
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
+
+spacer(2);
+for (var i = 0; i < topFive.length; i++){
+  console.log('This week\'s chart buster is:', '\'' + topFive[i] + '.\'');
+}
 
 
 /* 3) Dead Presidents
@@ -48,11 +58,34 @@ This function will iterate through the person parameter and console.log the foll
 "President person was a great leader."
 */
 
+var presidents = [
+  'Washington',
+  'Adams',
+  'Jefferson',
+  'Madison',
+  'Monroe',
+]
+
+spacer(3);
+for (var i = 0; i < presidents.length; i++){
+  console.log('The value at', i, 'is "' + presidents[i] + '."');
+}
+
+spacer('3-A');
+function leaders(person){
+  return 'President ' + person + ' was a great leader.';
+}
+
+for (var i = 0; i < presidents.length; i++){
+  console.log(leaders(presidents[i]));
+}
+
 
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
+
 
 
 /* 5) Even Stevens
