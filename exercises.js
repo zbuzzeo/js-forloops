@@ -405,26 +405,28 @@ var currentCohort = [
 var newCohort = [];
 
 function graduateAndSetNewClass(cohort){
-        for (var i = 0; i < cohort.length; i++){
-                if (cohort[i]['enrolled'] === true){
-                        cohort[i]['graduated'] = true;
-                        console.log('Student', cohort[i]['name'], 'is ENROLLED and GRADUATED.');
-                }else{
-                        function listNewCohort(){
-                                newCohort.push(
-                                        {
-                                                name: cohort[i]['name'],
-                                                graduated: cohort[i]['graduated'],
-                                                enrolled: cohort[i]['enrolled'],
-                                        }
-                                )
-                                cohort[i]['enrolled'] = true;
-                        }
-                        listNewCohort();
-                        console.log('Student', cohort[i]['name'], 'is now ENROLLED!');
-                }
-        }
-        console.log(newCohort);
+      for (var i = 0; i < cohort.length; i++){
+            if (cohort[i]['enrolled'] === true){
+                  cohort[i]['graduated'] = true;
+                  console.log('Student', cohort[i]['name'], 'is ENROLLED and GRADUATED');
+            }else{
+                  function listNewCohort(){
+                        newCohort.push(
+                              {
+                                    name: cohort[i]['name'],
+                                    graduated: cohort[i]['graduated'],
+                                    enrolled: cohort[i]['enrolled'],
+                              }
+                        )
+                  }
+                  listNewCohort();
+                  cohort[i]['enabled'] = true;
+                  console.log('Student', cohort[i]['name'], 'is now ENROLLED');
+            }
+      }
+      console.log(cohort);
+      console.log('\nDevLeague\'s new cohort is:\n')
+      console.log(newCohort);
 }
 
 spacer(15);
