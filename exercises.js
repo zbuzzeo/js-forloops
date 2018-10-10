@@ -133,6 +133,22 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
 
+var oopsArray = [
+  'turn',
+  ,
+  'down',
+  ,
+  'for',
+  ,
+  'what',
+]
+
+spacer(7);
+for (var i = 1; i < oopsArray.length; i += 2){
+  oopsArray[i] = 'nope';
+}
+
+console.log(oopsArray);
 
 /* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
