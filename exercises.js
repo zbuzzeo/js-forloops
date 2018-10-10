@@ -241,7 +241,25 @@ Declare a variable named `topQuote` and assign it to a String value of your favo
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
 
+var topQuote = 'When you play the Game of Thrones, you win or you die.';
+var unwantedChars = [
+  ',',
+  '.',
+]
 
+function findLongestWord(str){
+  var strArray = str.split(' ');
+  var longestWord = '';
+  for (var i = 0; i < strArray.length; i++){
+    if (strArray[i].length > longestWord.length){
+      longestWord = strArray[i];
+    }
+  }
+  console.log(longestWord);
+}
+
+spacer(11);
+findLongestWord(topQuote);
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
