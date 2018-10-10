@@ -1,7 +1,6 @@
 
 function spacer(probNum){
-  console.log(' ');
-  console.log(probNum + ':');
+  console.log(' \n' + probNum + ':');           //      \n creates another line.
 }
 
 /* 1) Ticket Generator
@@ -300,6 +299,7 @@ Write a function that will capitalize the first letter in each word in the phras
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
+    //    Just breaking the arrays down so I can visualize how the code works.
 var newArray = [
   'i\'ve',
   'lived',
@@ -311,22 +311,13 @@ var newArray = [
   'traveled',
 ]
 
+    //    Just breaking the arrays down so I can visualize how the code works.
 var forCurrentWordIndex0 = [
   'i',
   '\'',
   'v',
   'e',
 ]
-
-// function capitalizeLetters(str){
-//   var currentWord = str.split(' ');
-//   for (var i = 0; i < currentWord.length; i++){
-//         //    Now we have an array with words, but we still need to isolate the letters.
-//     var currentLetter = currentWord[i].split('');
-//     currentLetter[0].toUpperCase();
-//     currentWord[i] = currentLetter.join('');
-//   }
-// }
 
 function capitalizeLetters(str){
   var word = str.split(' ');
@@ -350,7 +341,17 @@ Note, please use two for loops to complete this problem
 
 var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
 
+function sortSightseeing(array){
+  for (var i = 0; i < array.length; i++){
+    for (var f = 0; f < array[i].length; f++){
+      var innerArray = array[i][f];
+      console.log(innerArray);
+    }
+  }
+}
 
+spacer(14);
+sortSightseeing(guide);
 
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
@@ -363,3 +364,68 @@ If the `enrolled` property is set to `true` then change that student's `graduate
 Console.log your result.
 */
 
+var currentCohort = [
+    {
+      name: 'Doug',
+      graduated: false,
+      enrolled: true
+    },
+    {
+      name: 'Pat',
+      graduated: false,
+      enrolled: false
+    },
+    {
+      name: 'Marsha',
+      graduated: false,
+      enrolled: false
+    },
+    {
+      name: 'Moira',
+      graduated: false,
+      enrolled: true
+    },
+    {
+      name: 'Ben',
+      graduated: false,
+      enrolled: true
+    },
+    {
+      name: 'Nigel the Giraffe',
+      graduated: false,
+      enrolled: false
+    },
+    {
+      name: 'Brandon the Shark',
+      graduated: false,
+      enrolled: true
+    }
+]
+
+var newCohort = [];
+
+function graduateAndSetNewClass(cohort){
+        for (var i = 0; i < cohort.length; i++){
+                if (cohort[i]['enrolled'] === true){
+                        cohort[i]['graduated'] = true;
+                        console.log('Student', cohort[i]['name'], 'is ENROLLED and GRADUATED.');
+                }else{
+                        function listNewCohort(){
+                                newCohort.push(
+                                        {
+                                                name: cohort[i]['name'],
+                                                graduated: cohort[i]['graduated'],
+                                                enrolled: cohort[i]['enrolled'],
+                                        }
+                                )
+                                cohort[i]['enrolled'] = true;
+                        }
+                        listNewCohort();
+                        console.log('Student', cohort[i]['name'], 'is now ENROLLED!');
+                }
+        }
+        console.log(newCohort);
+}
+
+spacer(15);
+graduateAndSetNewClass(currentCohort);
